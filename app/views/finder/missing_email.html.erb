@@ -1,0 +1,9 @@
+<div id="container">
+
+  <h1>All Customers</h1>
+  <h2><%= link_to 'New Customer', new_customer_path %><h2>
+  <h2><%= link_to 'Index', finder_index_path %><h2>
+
+  <%= render @customers %>
+
+</div>

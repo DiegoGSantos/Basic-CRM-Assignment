@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
+
   resources :customers
+
+  resources :finder, only: [:index]
+
+  get 'finder/alphabetized' => 'finder#ordered', as: :ordered
+  get 'finder/missing_email' => 'finder#missing_email', as: :noemail
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
