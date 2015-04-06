@@ -1,0 +1,12 @@
+<div id="content">
+  <p><%= link_to 'Edit', edit_customer_path(customer) %></p>
+  <h3><%=customer.full_name%></h3>
+  <p><%= image_tag "#{customer.image}.jpg" %></p>
+  <p>Phone: <%= customer.phone_number %></p>
+  <p>Email: <%= customer.email_address %></p>      
+  <p>Notes: <%= customer.notes %></p> 
+</div>
+
+
+
+
