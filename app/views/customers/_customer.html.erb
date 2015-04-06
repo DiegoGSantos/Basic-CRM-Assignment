@@ -5,6 +5,7 @@
   <p>Phone: <%= customer.phone_number %></p>
   <p>Email: <%= customer.email_address %></p>      
   <p>Notes: <%= customer.notes %></p> 
+  <p>Province: <%= customer.province_id.present? ? customer.province.name : "None"  %></p> 
 </div>
 
 
